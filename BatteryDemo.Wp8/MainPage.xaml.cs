@@ -32,7 +32,7 @@ namespace BatteryDemo.Wp8
         private void UpdateBattery()
         {
             BatteryLife.Text = string.Format("{0} %", battery.RemainingChargePercent);
-            BatteryLife.Text = string.Format("{0} %", battery.RemainingChargePercent);
+            RemainingTime.Text = string.Format("{0}", battery.RemainingDischargeTime);
         }
     }
 }
