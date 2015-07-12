@@ -5,9 +5,20 @@
     xmlns:local="using:BatteryDemo.Universal"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
+    mc:Ignorable="d" RequestedTheme="Dark">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <StackPanel VerticalAlignment="Top" Margin="20">
+            <TextBlock Text="RAW data:" Style="{StaticResource SubtitleTextBlockStyle}" />
+            <TextBlock x:Name="DesignedMaxCapacity" Text="Designed max capacity - mWh" />
+            <TextBlock x:Name="CurrentCapacity" Text="-/- mWh" />
+            <TextBlock x:Name="BatteryState" Text="unknown" />
+            <TextBlock x:Name="ChargeRate" Text="Charge rate: - mW" />
+            <TextBlock Text="Calculated data:" Style="{StaticResource SubtitleTextBlockStyle}" Margin="0,20,0,0" />
+            <TextBlock x:Name="BatteryPercentage" Text="- %" />
+            <TextBlock x:Name="TimeToCharge" Text="Time to charge: --:--" />
+            <TextBlock x:Name="TimeToChargeFromZeroToFull" Text="Charge from zero to full: --:--" />
+            <TextBlock x:Name="BatteryHealth" Text="Battery health: -- %" />
+        </StackPanel>
     </Grid>
 </Page>
