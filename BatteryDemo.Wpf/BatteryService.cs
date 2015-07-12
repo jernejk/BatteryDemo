@@ -3,6 +3,13 @@ using System.Runtime.InteropServices;
 
 namespace BatteryDemo.Wpf
 {
+    /// <summary>
+    /// Highly advanced alternative if ported to C#:
+    /// https://msdn.microsoft.com/en-us/library/windows/desktop/aa394074(v=vs.85).aspx
+    /// 
+    /// Similar WinForms class (requires System.Windows.Forms.dll):
+    /// https://msdn.microsoft.com/en-us/library/system.windows.forms.powerstatus.aspx
+    /// </summary>
     public class BatteryService
     {
         [DllImport("kernel32.dll", CharSet = CharSet.Ansi, SetLastError = true, ExactSpelling = true)]

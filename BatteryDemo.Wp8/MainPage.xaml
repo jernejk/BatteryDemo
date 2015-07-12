@@ -1,0 +1,20 @@
+﻿<Page
+    x:Class="BatteryDemo.Wp8.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BatteryDemo.Wp8"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel Margin="24,0,24,0">
+        <TextBlock Text="Battery" Style="{StaticResource HeaderTextBlockStyle}" />
+        
+        <TextBlock Text="Remaining charge" Margin="0,40,0,0" Style="{StaticResource TitleTextBlockStyle}" />
+        <TextBlock x:Name="BatteryLife" Text="- %" Style="{StaticResource SubheaderTextBlockStyle}" />
+
+        <TextBlock Text="Remaining discharge time" Margin="0,20,0,0" Style="{StaticResource TitleTextBlockStyle}" />
+        <TextBlock x:Name="RemainingTime" Text="-" Style="{StaticResource SubheaderTextBlockStyle}" />
+    </StackPanel>
+</Page>
