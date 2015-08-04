@@ -156,7 +156,8 @@ ClientBin/
 *~
 *.dbmdl
 *.dbproj.schemaview
-*.pfx
+# Pfx must be included for App Veyor build server.
+# *.pfx
 *.publishsettings
 node_modules/
 bower_components/
