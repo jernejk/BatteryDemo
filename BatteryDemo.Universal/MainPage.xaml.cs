@@ -64,7 +64,13 @@ namespace BatteryDemo.Universal
 
         private static string GetTimeAsString(TimeSpan? time)
         {
-            return time.HasValue ? time.Value.ToString("hh\\:mm\\:ss") : "--:--";
+            if (time.HasValue)
+            {
+                string hours = ((int)time.Value.TotalHours).ToString();
+                return hours + time.Value.ToString("\\:mm\\:ss");
+            }
+
+            return "--:--:--";
         }
     }
 }
